@@ -1,0 +1,160 @@
+body {
+  margin: 20px;
+  background: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.page-header h1 {
+  margin-bottom: 5px;
+}
+
+.page-header p {
+  margin-top: 5px;
+}
+
+.topbar {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.summary-card,
+.transaction-card {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+}
+
+.summary-card h1,
+.transaction-card h2 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.caption {
+  margin: 5px 0 0;
+  color: #555555;
+}
+
+.content {
+  display: block;
+}
+
+.expense-form,
+.activity {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #cccccc;
+}
+
+.form-heading h2,
+.activity-header h2 {
+  margin-top: 0;
+}
+
+.expense-form label {
+  display: block;
+  margin-top: 12px;
+}
+
+.expense-form input,
+.expense-form select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #999999;
+  background: white;
+}
+
+.submit-button {
+  margin-top: 15px;
+  padding: 8px 14px;
+  border: 1px solid #555555;
+  background: #eeeeee;
+  color: black;
+  cursor: pointer;
+}
+
+.success {
+  min-height: 14px;
+  color: green;
+  opacity: 0;
+}
+
+.success.visible {
+  opacity: 1;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.activity select {
+  padding: 6px;
+  background: white;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #dddddd;
+}
+
+.expense-info strong,
+.expense-info span {
+  display: block;
+}
+
+.expense-info span {
+  margin-top: 4px;
+  color: #555555;
+}
+
+.expense-amount {
+  margin-left: auto;
+}
+
+.delete-button {
+  padding: 3px 8px;
+  border: 1px solid #999999;
+  background: #eeeeee;
+  color: black;
+  cursor: pointer;
+}
+
+.empty-state {
+  padding: 15px 0;
+  color: #555555;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 12px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
